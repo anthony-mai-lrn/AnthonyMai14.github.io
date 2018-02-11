@@ -60,11 +60,16 @@ img {
 /*background images -- end*/
 /*section --begin*/
 .sectionBlue {
-	background-color: #2E4172;
+	background-color: #32496C;
 	overflow: auto;
 }
-.sectionOlive {
-	background-color: #9FC2CC;
+.sectionGold {
+	background-color: #FCE18F;
+	overflow: auto;
+}
+
+.sectionGrey {
+	background-color: #58595B;
 	overflow: auto;
 }
 .textBox {
