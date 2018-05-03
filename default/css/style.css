@@ -114,6 +114,10 @@ p {
 	font-weight: 300;
 }
 
+span {
+	font-weight: bold;
+}
+
 a: hover {
 	text-decoration: underline;
 }
