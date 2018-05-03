@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:300|Raleway:100,300,400');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300|Raleway:100,300,400|Montserrat');
 @import url('../../../bootstrap/css/bootstrap.min.css');
 /*Overview of css
 -general settings
@@ -31,60 +31,52 @@ nav a{
 	margin-left: auto;
 	line-height: normal;
 }
+
+.dropdown_menu {
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+  opacity: 0.5;
+  right:0px;
+  background: #fafafa;
+  width: auto;
+  padding-top: 60px;
+}
+
+.dropdown_menu_item {
+  list-style: none;
+  margin: 50px;
+  padding: 0;
+  width: auto;
+}
+
+ul.dropdown_menu {
+  -webkit-padding-start: 0px;
+}
+
+.dropdown_menu_item a {
+  color: #333;
+  padding: 5px 20px 5px 30px;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
 /*navagation --end*/
-/*background images --begin*/
-.backgroundImage {
-	height: 100%;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
+
+/*container elements*/
+div#logo {
+	background-color: #465C69;
+	opacity: 0.8;
+}
+div#about {
+	background-color: #DF9A57;
+	opacity: 0.8;
 }
 
-.imageOne {
-	background-image: url("https://static.pexels.com/photos/7100/iphone-desk-laptop-notebook.jpg");
-}
-
-/*.imageOne {
-	background-image: url("https://static.pexels.com/photos/4827/nature-forest-trees-fog.jpeg");
-}*/
-
-.imageTwo {
-	background-image: url("https://static.pexels.com/photos/141784/pexels-photo-141784.jpeg");
-}
-
-img {
-	max-height: 150px;
-  margin: 0 auto;
-  display: inline-block;
-}
-/*background images -- end*/
-/*section --begin*/
-.sectionBlue {
-	background-color: #32496C;
-	overflow: auto;
-}
-.sectionGold {
-	background-color: #FCE18F;
-	overflow: auto;
-}
-
-.sectionGrey {
-	background-color: #58595B;
-	overflow: auto;
-}
-.textBox {
-	text-align: center;
-}
-.banner {
-	position: absolute;
-	width: 100%;
-	padding: 25% 0%;
-}
-
-.about {
-	padding: 1% 2%;
-	position: relative;
-	font-weight: 400;
+div#work {
+	background-color: #98A886;
+	opacity: 0.8;
 }
 
 /*Standard devices*/
@@ -104,6 +96,8 @@ p {
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 300;
 }
+
+
 
 
 @media (max-width: 500px) {
