@@ -65,10 +65,10 @@ ul.dropdown_menu {
 /*navagation --end*/
 
 /*container elements*/
-div#logo {
-	background-color: #465C69;
-	opacity: 0.8;
+div#home {
+  background-color: rgba(70, 92, 105, 0.8);
 }
+
 div#about {
 	background-color: #DF9A57;
 	opacity: 0.8;
@@ -79,6 +79,22 @@ div#work {
 	opacity: 0.8;
 }
 
+div.wrapper {
+	overflow: auto;
+}
+
+div.content {
+	text-align: left;
+}
+
+div.logo_wrap {
+	text-align: center;
+}
+#logo {
+	margin: inherit;
+	text-align: center;
+}
+
 /*Standard devices*/
 h1, h2, h3, h4, h5, h6, p {
 	/*margin-bottom: 20px;*/
@@ -87,6 +103,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 h1 {
 	font-weight: 100;
+	text-align: center;
 }
 h2 {
 	font-weight: 100;
@@ -97,6 +114,10 @@ p {
 	font-weight: 300;
 }
 
+a: hover {
+	text-decoration: underline;
+}
+
 
 
 
@@ -104,11 +125,33 @@ p {
 	h1 {
 		font-size: 300%;
 	}
+	img#logo {
+		max-height: 222px;
+		display: inline-block;
+		margin: 0 auto;
+		position: relative;
+	}
+	img.work_icon {
+		max-height: 150px;
+		margin: 0 auto;
+		display: inline-block;
+	}
 }
 
 @media (min-width: 500px) {
 	h1 {
 		font-size: 500%;
+	}
+	img#logo {
+		max-height: 444px;
+		display: inline-block;
+		margin: 0 auto;
+		position: relative;
+	}
+	img.work_icon {
+		max-height: 150px;
+		margin: 0 auto;
+		display: inline-block;
 	}
 }
 
@@ -116,5 +159,16 @@ p {
 @media (min-width: 800px) {
 	h1 {
 		font-size: 700%;
+	}
+	img#logo {
+		max-height: 444px;
+		display: inline-block;
+		margin: 0 auto;
+		position: relative;
+	}
+	img.work_icon {
+		max-height: 150px;
+		margin: 0 auto;
+  	display: inline-block;
 	}
 }
