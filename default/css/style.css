@@ -26,12 +26,18 @@ nav {
 }
 
 nav a{
-	text-decoration: none;
 	color: #fff;
 	margin-left: auto;
 	line-height: normal;
 }
-
+#mobile_nav_ul {
+	float: right;
+}
+.mobile_nav_link {
+	text-decoration: none;
+	display: inline-block;
+}
+/*
 .dropdown_menu {
   position: absolute;
   z-index: 10;
@@ -61,7 +67,7 @@ ul.dropdown_menu {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-}
+}*/
 /*navagation --end*/
 
 /*container elements*/
@@ -93,6 +99,7 @@ div.logo_wrap {
 #logo {
 	margin: inherit;
 	text-align: center;
+	height:
 }
 
 /*Standard devices*/
