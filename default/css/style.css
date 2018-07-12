@@ -14,6 +14,9 @@ html, body {
 	font-family: 'Raleway', sans-serif;
 }
 
+#name {
+	display: inline-block;
+}
 /*navigation --begin*/
 nav {
 	position: fixed;
@@ -32,6 +35,7 @@ nav a{
 }
 #mobile_nav_ul {
 	float: right;
+	margin-right: 50px;
 }
 .mobile_nav_link {
 	text-decoration: none;
