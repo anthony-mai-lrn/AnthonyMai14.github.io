@@ -1,1 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300|Raleway:100,300,400|Montserrat');
+
+html {
+    background-color: #C4C4C4;
+}
+h1 {
+    font-family: 'Quicksand', sans-serif;
+}
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+.fab {
+    color: #1AC0C6;
+}
