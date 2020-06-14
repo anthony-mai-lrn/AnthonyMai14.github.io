@@ -1,21 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:300|Raleway:100,300,400|Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300|Raleway:100,300,400|Montserrat|Noto+Serif:400,700');
 
+a:hover {
+    color: #1AC0C6;
+}
 body {
-    background-image: url("../img/background-graphic.png");
+    background-image: url("../img/open-sign-inside.jpg");
     background-repeat: no-repeat;
-    background-size: auto;
     width: 100%;
-    min-height: 100vh;
+    max-height: 100vh;
     margin: 0;
 }
-h1 {
-    font-family: 'Quicksand', sans-serif;
+h1, h2, h3{
+    font-family: 'Noto Serif', serif;
+    line-height: 120%;
+}
+h2 {
+    text-transform: uppercase;
 }
 p {
-    font-family: 'Raleway', sans-serif;
-    font-size: 12px;
+    font-family: 'Quicksand', sans-serif;
 }
-
 
 .social-icon {
     color: #1AC0C6;
@@ -24,14 +28,18 @@ p {
     padding: 0 auto;
 }
 #content {
-    background-color: #CCCCCC;
+    background-color: #FAFAFA;
     min-height: 100vh;
     width: 100%;
-    padding: 15px;
 }
 #avatar {
     border-radius: 50%;
 }
+#open-statement {
+    display: flex;
+    align-items: center;
+}
+
 /* Extra small devices (portrait phones, less than 576px)
  * No media query for `xs` since this is the default in Bootstrap
 */
@@ -48,11 +56,40 @@ p {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    body {
+        background-size: 100%;
+    }
     h1 {
-        font-size: x-large;
+        font-size: xx-large;
+    }
+    h2 {
+        font-size: large;
+        color: #CCCCCC;
+    }
+    h3 {
+        font-size: medium;
+    }
+    header {
+        padding: 0px 15px;
+        margin: 60px 0px 0px;
+    }
+    .card {
+        width: 315px;
+        box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        margin: 15px;
+        padding: 0px;
+    }
+    .placeholder {
+        background-color: #BAE8E8;
+        width: 100%;
+        height: 186px;
     }
     #avatar {
         max-width: 120px;
+    }
+    #content {
+        padding: 15px;
     }
 }
 
