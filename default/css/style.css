@@ -6,8 +6,6 @@ a:hover {
 body {
     background-image: url("../img/open-sign-inside.jpg");
     background-repeat: no-repeat;
-    width: 100%;
-    max-height: 100vh;
     margin: 0;
 }
 h1, h2, h3{
@@ -57,7 +55,7 @@ p {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     body {
-        background-size: 100%;
+        background-size: cover;
     }
     h1 {
         font-size: xx-large;
@@ -72,6 +70,9 @@ p {
     header {
         padding: 0px 15px;
         margin: 60px 0px 0px;
+    }
+    section {
+        margin: 60px 0;
     }
     .card {
         width: 315px;
