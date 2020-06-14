@@ -91,6 +91,9 @@ p {
     #content {
         padding: 15px;
     }
+    #open-statement > h1 {
+        line-height: 170%;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
