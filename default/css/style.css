@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300|Raleway:100,300,400|Montserrat');
 
-html {
-    background-color: #C4C4C4;
-}
 body {
     background-image: url("../img/background-graphic.png");
     background-repeat: no-repeat;
     background-size: auto;
     width: 100%;
-    padding: 15px;
-    margin: 0px;
+    min-height: 100vh;
+    margin: 0;
 }
 h1 {
     font-family: 'Quicksand', sans-serif;
@@ -23,8 +20,14 @@ p {
 .social-icon {
     color: #1AC0C6;
 }
+#body-wrapper {
+    padding: 0 auto;
+}
 #content {
     background-color: #CCCCCC;
+    min-height: 100vh;
+    width: 100%;
+    padding: 15px;
 }
 #avatar {
     border-radius: 50%;
