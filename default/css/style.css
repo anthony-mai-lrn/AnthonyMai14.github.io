@@ -7,35 +7,73 @@ body {
     background-image: url("../img/open-sign-inside.jpg");
     background-repeat: no-repeat;
     margin: 0;
+    padding: 0px;
 }
 h1, h2, h3{
     font-family: 'Noto Serif', serif;
     line-height: 120%;
 }
+h1 {
+    font-size: 30px;
+}
 h2 {
+    font-size: 12px;
+    color: #CCCCCC;
     text-transform: uppercase;
+}
+header {
+    display: flex;
+    align-items: center;
+    margin: 60px;
 }
 p {
     font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    line-height: 140%;
 }
-
+section {
+    margin: 40px;
+    padding: 0px;
+}
+.card {
+    width: 295px;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    margin: 15px;
+    padding: 0px;
+}
+.card-placeholder {
+    background-color: #BAE8E8;
+    width: 100%;
+    height: 186px;
+}
+.card-title {
+    font-size: 16px;
+}
+.row { /* Overridding boostrap padding & margin*/
+    margin: 0px;
+}
 .social-icon {
     color: #1AC0C6;
-}
-#body-wrapper {
-    padding: 0 auto;
-}
-#content {
-    background-color: #FAFAFA;
-    min-height: 100vh;
-    width: 100%;
+    margin: 10px;
 }
 #avatar {
     border-radius: 50%;
+    max-width: 120px;
+    margin: 0 auto;
+}
+#body-wrapper {
+    padding: 0;
+    
+}
+#content {
+    background-color: #FAFAFA;
+    min-height: 100%;
+    min-width: 100vw;
+    margin: 140px 0 0;
 }
 #open-statement {
-    display: flex;
-    align-items: center;
+    text-align: center;
 }
 
 /* Extra small devices (portrait phones, less than 576px)
@@ -44,57 +82,49 @@ p {
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-
+    header {
+        width: 620px;
+        height: 120px;
+    }
+    #open-statement {
+        text-align: left;
+    }
  }
 
 /*/Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-
+    .card {
+        width: 315px;
+    }
+    #body-wrapper {
+        margin: 200px 0 0;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    body {
+    /*body {
         background-size: cover;
-    }
-    h1 {
-        font-size: xx-large;
-    }
-    h2 {
-        font-size: large;
-        color: #CCCCCC;
     }
     h3 {
         font-size: medium;
     }
     header {
-        padding: 0px 15px;
-        margin: 60px 0px 0px;
+        margin: 60px;
     }
     section {
-        margin: 60px 0;
+        margin: 60px;
     }
-    .card {
-        width: 315px;
-        box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.15);
-        border-radius: 10px;
-        margin: 15px;
-        padding: 0px;
+    #body-wrapper {
+        margin: 0px;
     }
-    .placeholder {
-        background-color: #BAE8E8;
-        width: 100%;
-        height: 186px;
-    }
-    #avatar {
-        max-width: 120px;
-    }
-    #content {
-        padding: 15px;
+    #section-social {
+        display: flex;
+        justify-content: flex-end;
     }
     #open-statement > h1 {
         line-height: 170%;
-    }
+    }*/
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
