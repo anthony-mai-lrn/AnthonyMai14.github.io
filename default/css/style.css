@@ -11,15 +11,23 @@ body {
 }
 h1, h2, h3{
     font-family: 'Noto Serif', serif;
-    line-height: 120%;
+}
+h1, h2 {
+    text-align: center;
 }
 h1 {
     font-size: 30px;
+    line-height: 120%;
 }
 h2 {
     font-size: 12px;
+    line-height: 140%;
     color: #CCCCCC;
     text-transform: uppercase;
+}
+h3 {
+    font-size: 12px;
+    line-height: 120%;
 }
 header {
     display: flex;
@@ -37,6 +45,7 @@ section {
 }
 .card {
     width: 295px;
+    height: 248px;
     box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     margin: 15px;
@@ -45,7 +54,7 @@ section {
 .card-placeholder {
     background-color: #BAE8E8;
     width: 100%;
-    height: 186px;
+    height: 100%;
 }
 .card-title {
     font-size: 16px;
@@ -59,7 +68,8 @@ section {
 }
 #avatar {
     border-radius: 50%;
-    max-width: 120px;
+    width: 120px;
+    display: block;
     margin: 0 auto;
 }
 #body-wrapper {
@@ -72,9 +82,6 @@ section {
     min-width: 100vw;
     margin: 140px 0 0;
 }
-#open-statement {
-    text-align: center;
-}
 
 /* Extra small devices (portrait phones, less than 576px)
  * No media query for `xs` since this is the default in Bootstrap
@@ -82,32 +89,29 @@ section {
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-    header {
-        width: 620px;
-        height: 120px;
-    }
-    #open-statement {
+    h1, h2 {
         text-align: left;
+    }
+    header {
+        width: 650px;
+        height: 120px;
     }
  }
 
 /*/Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-    .card {
+   /* .card {
         width: 315px;
     }
     #body-wrapper {
         margin: 200px 0 0;
-    }
+    }*/
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     /*body {
         background-size: cover;
-    }
-    h3 {
-        font-size: medium;
     }
     header {
         margin: 60px;
