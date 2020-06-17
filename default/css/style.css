@@ -3,17 +3,12 @@
 a:hover {
     color: #1AC0C6;
 }
-body {
-    background-image: url("../img/open-sign-inside.jpg");
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0px;
-}
 h1, h2, h3{
     font-family: 'Noto Serif', serif;
 }
 h1, h2 {
-    text-align: center;
+    display: block;
+    margin: 0 auto;
 }
 h1 {
     font-size: 30px;
@@ -32,7 +27,10 @@ h3 {
 header {
     display: flex;
     align-items: center;
-    margin: 60px;
+}
+header, section, #content{
+    margin: 0px 40px 40px;
+    padding: 0 35px;
 }
 p {
     font-family: 'Quicksand', sans-serif;
@@ -44,7 +42,7 @@ section {
     padding: 0px;
 }
 .card {
-    width: 295px;
+    min-width: 295px;
     height: 248px;
     box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
@@ -53,14 +51,17 @@ section {
 }
 .card-placeholder {
     background-color: #BAE8E8;
-    width: 100%;
+    width: inherit;
     height: 100%;
+}
+.card-body {
+    width: inherit;
 }
 .card-title {
     font-size: 16px;
 }
-.row { /* Overridding boostrap padding & margin*/
-    margin: 0px;
+.header-wrapper {
+    margin: 20px 5px;
 }
 .social-icon {
     color: #1AC0C6;
@@ -72,15 +73,24 @@ section {
     display: block;
     margin: 0 auto;
 }
+#avatar-wrapper {
+    z-index: 1;
+    top: -60px;
+}
+#banner {
+    background-image: url("../img/background-graphic.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 200px;
+}
 #body-wrapper {
     padding: 0;
     
 }
 #content {
     background-color: #FAFAFA;
-    min-height: 100%;
-    min-width: 100vw;
-    margin: 140px 0 0;
+    margin: 0 auto;
 }
 
 /* Extra small devices (portrait phones, less than 576px)
@@ -93,45 +103,35 @@ section {
         text-align: left;
     }
     header {
-        width: 650px;
-        height: 120px;
+        margin: 40px 92px;
+        padding: 0;
     }
+    .card {
+        max-width: 315px;
+    }
+    #avatar-wrapper {
+        z-index: 0;
+        top: 0px;
+    }  
  }
 
 /*/Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-   /* .card {
-        width: 315px;
-    }
-    #body-wrapper {
-        margin: 200px 0 0;
-    }*/
+    
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    /*body {
-        background-size: cover;
-    }
-    header {
+    
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    header, section {
         margin: 60px;
-    }
-    section {
-        margin: 60px;
-    }
-    #body-wrapper {
-        margin: 0px;
     }
     #section-social {
         display: flex;
         justify-content: flex-end;
     }
-    #open-statement > h1 {
-        line-height: 170%;
-    }*/
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
 }
