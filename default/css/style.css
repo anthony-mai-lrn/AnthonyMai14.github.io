@@ -118,6 +118,9 @@ p {
         display: flex;
         justify-content: center;
     }
+    #title-wrapper {
+        padding: 0px;
+    }
  }
 
 /*/Medium devices (tablets, 768px and up)*/
