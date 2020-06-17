@@ -27,6 +27,7 @@ h3 {
 header {
     display: flex;
     align-items: center;
+    top: -60px;
 }
 header, section, #content{
     margin: 0px 40px 40px;
