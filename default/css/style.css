@@ -97,7 +97,7 @@ p {
     margin: 20px 25px;
 }
 #open-statement {
-    padding: 0 0 0 40px;
+    padding: 0 40px;
 }
 
 /* Extra small devices (portrait phones, less than 576px)
@@ -134,6 +134,9 @@ p {
     #contact-social {
         display: flex;
         justify-content: flex-end;
+    }
+    #open-statement {
+        padding: 0 0 0 40px;
     }
     #title-wrapper {
         padding: 0px;
