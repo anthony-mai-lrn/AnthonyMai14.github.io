@@ -68,7 +68,7 @@ p {
     top: -60px;
 }
 #banner {
-    background-image: url("../img/background-graphic.png");
+    background-image: url("../img/open-sign-inside.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -78,8 +78,15 @@ p {
     padding: 0;
     
 }
+#contact-content {
+    padding: 0px;
+}
+#contact-social{
+    padding: 0px;
+}
 #content {
     background-color: #FAFAFA;
+    height: 100vh; 
 }
 #section-about, #section-contact, #section-project {
     /* Wireframe states 40px for sides, but boostrap has a default padding 
@@ -88,7 +95,7 @@ p {
     margin: 20px 25px;
 }
 #open-statement {
-    padding: 0 40px;
+    padding: 0 0 0 40px;
 }
 
 /* Extra small devices (portrait phones, less than 576px)
@@ -110,6 +117,10 @@ p {
     .social-icon {
         margin: 10px;
     }
+    .title-wrapper {
+        display: inline;
+        padding: 0px;
+    }
     #avatar-wrapper {
         z-index: 0;
         top: 0px;
@@ -117,6 +128,10 @@ p {
     #card-wrapper {
         display: flex;
         justify-content: center;
+    }
+    #contact-social {
+        display: flex;
+        justify-content: flex-end;
     }
     #title-wrapper {
         padding: 0px;
@@ -138,8 +153,11 @@ p {
     header, section {
         margin: 60px;
     }
-    #section-social {
+    #avatar-wrapper {
         display: flex;
         justify-content: flex-end;
+    }
+    #banner {
+        height: 100vh;
     }
 }
